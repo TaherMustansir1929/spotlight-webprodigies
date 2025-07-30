@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark, shadcn } from "@clerk/themes";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{ theme: [dark, shadcn] }}>
       <html lang="en" suppressHydrationWarning>
         <body
           className={`${manrope.variable} antialiased`}
