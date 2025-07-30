@@ -42,3 +42,4 @@ next-env.d.ts
 
 # spotlight starter pack
 /spotlight starter pack/
+/src/generated/prisma
