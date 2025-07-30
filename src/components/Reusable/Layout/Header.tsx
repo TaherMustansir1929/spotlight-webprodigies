@@ -17,7 +17,7 @@ export const Header = ({ user }: Props) => {
   const router = useRouter();
 
   return (
-    <div className="w-full px-4 pt-10 sticky top-0 z-10 flex items-center justify-between flex-wrap gap-4 bg-background">
+    <div className="w-full px-4 pt-10 pb-4 sticky top-0 z-10 flex items-center justify-between flex-wrap gap-4 bg-background my-auto">
       {pathname.includes("pipeline") ? (
         <Button
           variant={"outline"}
